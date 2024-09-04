@@ -1,0 +1,308 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Finalizar relatório mensal",
+      "description": "Preparar e enviar o relatório mensal de desempenho para a equipe de vendas.",
+      "status": "Concluída",
+      "created_at": "2024-08-01T10:00:00Z",
+      "completed_at": "2024-08-05T15:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Revisar código do projeto",
+      "description": "Revisar o código do novo projeto para identificar possíveis bugs e melhorias.",
+      "status": "Em progresso",
+      "created_at": "2024-08-02T09:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 3,
+      "title": "Planejar a reunião de equipe",
+      "description": "Criar uma agenda para a reunião semanal de equipe e compartilhar com todos os membros.",
+      "status": "Pendente",
+      "created_at": "2024-08-03T14:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 4,
+      "title": "Atualizar documentação do sistema",
+      "description": "Revisar e atualizar a documentação técnica do sistema para refletir as mudanças recentes.",
+      "status": "Pendente",
+      "created_at": "2024-08-04T11:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 5,
+      "title": "Realizar teste de carga",
+      "description": "Executar teste de carga no sistema para verificar o desempenho sob alta demanda.",
+      "status": "Concluída",
+      "created_at": "2024-08-05T08:00:00Z",
+      "completed_at": "2024-08-06T16:45:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Implementar nova funcionalidade",
+      "description": "Desenvolver e integrar a nova funcionalidade solicitada pelo cliente.",
+      "status": "Em progresso",
+      "created_at": "2024-08-06T10:30:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 7,
+      "title": "Auditar segurança do sistema",
+      "description": "Realizar uma auditoria completa das medidas de segurança do sistema.",
+      "status": "Pendente",
+      "created_at": "2024-08-07T12:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 8,
+      "title": "Treinar novos funcionários",
+      "description": "Organizar um treinamento para os novos funcionários da equipe.",
+      "status": "Concluída",
+      "created_at": "2024-08-08T09:00:00Z",
+      "completed_at": "2024-08-09T15:00:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Revisar política de privacidade",
+      "description": "Atualizar a política de privacidade conforme as novas regulamentações.",
+      "status": "Pendente",
+      "created_at": "2024-08-09T10:30:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 10,
+      "title": "Analisar feedback dos clientes",
+      "description": "Reunir e analisar o feedback recente dos clientes sobre os produtos.",
+      "status": "Em progresso",
+      "created_at": "2024-08-10T11:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 11,
+      "title": "Testar nova funcionalidade",
+      "description": "Testar a nova funcionalidade antes do lançamento para o cliente.",
+      "status": "Concluída",
+      "created_at": "2024-08-11T09:30:00Z",
+      "completed_at": "2024-08-12T14:45:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Criar plano de contingência",
+      "description": "Desenvolver um plano de contingência para potenciais falhas de sistema.",
+      "status": "Pendente",
+      "created_at": "2024-08-12T08:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 13,
+      "title": "Documentar fluxo de trabalho",
+      "description": "Criar uma documentação detalhada do fluxo de trabalho atual da equipe.",
+      "status": "Em progresso",
+      "created_at": "2024-08-13T10:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 14,
+      "title": "Realizar backup de dados",
+      "description": "Efetuar backup completo dos dados para a segurança da informação.",
+      "status": "Concluída",
+      "created_at": "2024-08-14T11:30:00Z",
+      "completed_at": "2024-08-14T15:00:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Configurar novos servidores",
+      "description": "Preparar e configurar os novos servidores para o ambiente de produção.",
+      "status": "Pendente",
+      "created_at": "2024-08-15T13:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 16,
+      "title": "Desenvolver protótipo do aplicativo",
+      "description": "Criar um protótipo funcional para o novo aplicativo mobile.",
+      "status": "Em progresso",
+      "created_at": "2024-08-16T09:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 17,
+      "title": "Revisar contratos de fornecedores",
+      "description": "Revisar e negociar os contratos atuais com os fornecedores.",
+      "status": "Concluída",
+      "created_at": "2024-08-17T10:30:00Z",
+      "completed_at": "2024-08-18T11:45:00Z"
+    },
+    {
+      "id": 18,
+      "title": "Analisar dados de vendas",
+      "description": "Coletar e analisar os dados de vendas do último trimestre.",
+      "status": "Pendente",
+      "created_at": "2024-08-18T12:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 19,
+      "title": "Atualizar sistema de CRM",
+      "description": "Realizar a atualização do sistema de CRM para a nova versão.",
+      "status": "Concluída",
+      "created_at": "2024-08-19T09:00:00Z",
+      "completed_at": "2024-08-20T16:00:00Z"
+    },
+    {
+      "id": 20,
+      "title": "Organizar evento de lançamento",
+      "description": "Planejar e organizar o evento de lançamento do novo produto.",
+      "status": "Pendente",
+      "created_at": "2024-08-20T14:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 21,
+      "title": "Criar conteúdo para blog",
+      "description": "Escrever e publicar novos artigos no blog corporativo.",
+      "status": "Em progresso",
+      "created_at": "2024-08-21T10:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 22,
+      "title": "Otimizar site para SEO",
+      "description": "Realizar otimizações no site para melhorar o SEO.",
+      "status": "Concluída",
+      "created_at": "2024-08-22T09:30:00Z",
+      "completed_at": "2024-08-23T12:00:00Z"
+    },
+    {
+      "id": 23,
+      "title": "Realizar pesquisa de mercado",
+      "description": "Conduzir uma pesquisa de mercado para entender as tendências do setor.",
+      "status": "Pendente",
+      "created_at": "2024-08-23T13:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 24,
+      "title": "Desenvolver API para parceiros",
+      "description": "Criar uma API para que os parceiros possam integrar com o nosso sistema.",
+      "status": "Em progresso",
+      "created_at": "2024-08-24T08:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 25,
+      "title": "Redesenhar página de login",
+      "description": "Melhorar o design e a usabilidade da página de login.",
+      "status": "Concluída",
+      "created_at": "2024-08-25T11:00:00Z",
+      "completed_at": "2024-08-26T14:00:00Z"
+    },
+    {
+      "id": 26,
+      "title": "Planejar campanha de marketing",
+      "description": "Desenvolver um plano para a próxima campanha de marketing.",
+      "status": "Pendente",
+      "created_at": "2024-08-26T09:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 27,
+      "title": "Configurar pipeline de CI/CD",
+      "description": "Implementar um pipeline de CI/CD para automação de deploys.",
+      "status": "Em progresso",
+      "created_at": "2024-08-27T10:30:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 28,
+      "title": "Revisar estratégia de conteúdo",
+      "description": "Reavaliar e ajustar a estratégia de conteúdo para as redes sociais.",
+      "status": "Concluída",
+      "created_at": "2024-08-28T11:30:00Z",
+      "completed_at": "2024-08-29T13:00:00Z"
+    },
+    {
+      "id": 29,
+      "title": "Analisar concorrência",
+      "description": "Estudar as estratégias da concorrência e sugerir melhorias.",
+      "status": "Pendente",
+      "created_at": "2024-08-29T12:00:00Z",
+      "completed_at": null
+    },
+    {
+      "id": 30,
+      "title": "Criar newsletter mensal",
+      "description": "Elaborar e enviar a newsletter mensal para os assinantes.",
+      "status": "Em progresso",
+      "created_at": "2024-08-30T08:00:00Z",
+      "completed_at": null
+    }
+  ],
+  "Charts": {
+    "completedTasksByDay": [
+      {
+        "date": "2024-08-05",
+        "tasksCompleted": 3
+      },
+      {
+        "date": "2024-08-06",
+        "tasksCompleted": 2
+      },
+      {
+        "date": "2024-08-09",
+        "tasksCompleted": 6
+      },
+      {
+        "date": "2024-08-12",
+        "tasksCompleted": 1
+      },
+      {
+        "date": "2024-08-14",
+        "tasksCompleted": 1
+      },
+      {
+        "date": "2024-08-18",
+        "tasksCompleted": 2
+      },
+      {
+        "date": "2024-08-20",
+        "tasksCompleted": 1
+      },
+      {
+        "date": "2024-08-23",
+        "tasksCompleted": 2
+      },
+      {
+        "date": "2024-08-29",
+        "tasksCompleted": 3
+      }
+    ],
+    "completedTasksByWeek": [
+      {
+        "week": "1° week",
+        "tasksCompleted": 5
+      },
+      {
+        "week": "2° week",
+        "tasksCompleted": 7
+      },
+      {
+        "week": "3° week",
+        "tasksCompleted": 5
+      },
+      {
+        "week": "4° week",
+        "tasksCompleted": 4
+      }
+    ],
+    "completedTasksByMonth": [
+      {
+        "month": "2024-08",
+        "tasksCompleted": 21
+      }
+    ]
+  }
+}
