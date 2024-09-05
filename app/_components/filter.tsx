@@ -22,7 +22,7 @@ const Filter = ({ setFilter, setSearchTerm, setSortOrder }: FilterProps) => {
   };
 
   return (
-    <div className="w-full mt-5 flex justify-between max-sm:flex-col max-sm:space-y-3">
+    <div className="w-full mt-5 flex gap-3 justify-between max-md:flex-col max-sm:space-y-3">
       <div className="relative flex items-center">
         <Input
           type="text"
@@ -33,13 +33,13 @@ const Filter = ({ setFilter, setSearchTerm, setSortOrder }: FilterProps) => {
         <SearchIcon size={24} className="absolute left-2 opacity-60" />
       </div>
 
-      <div className="flex max-sm:justify-between gap-3">
+      <div className="flex max-md:justify-between gap-3">
         <div className="relative flex items-center">
           <Select name="filter" onChange={handleFilterChange}>
             <Option value="all">Todas</Option>
             <Option value="pending">Pendentes</Option>
             <Option value="in-progress">Em andamento</Option>
-            <Option value="completed">Completadas</Option>
+            <Option value="completed">Concluídas</Option>
           </Select>
           <FilterIcon size={24} className="absolute left-2 opacity-60" />
         </div>
