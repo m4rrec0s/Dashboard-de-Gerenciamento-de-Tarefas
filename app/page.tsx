@@ -6,22 +6,14 @@ import Header from "./_components/header";
 import TaskItem from "./_components/task-item";
 import data from "./data/tasks.json";
 import {
-  ChartColumnBigIcon,
-  ListCheckIcon,
   MoonIcon,
   SunIcon,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 import ThemeToggleContainer from "./_components/basics/theme-container";
-import {
-  Menu,
-  MenuContent,
-  MenuHeader,
-  MenuItem,
-} from "./_components/basics/menu";
-import Image from "next/image";
 import { useAuth } from "./_context/auth-context";
 import { useRouter } from "next/navigation";
+import MainMenu from "./_components/main-menu";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -102,38 +94,7 @@ export default function Home() {
         )}
       </ThemeToggleContainer>
       <div className="flex">
-        <Menu>
-          <MenuContent>
-            <MenuHeader>
-              <div className="flex flex-col items-center gap-2">
-                <Image
-                  src="/icon.jpeg"
-                  alt="Logo"
-                  width={100}
-                  height={100}
-                  className="rounded-full p-1 border"
-                  priority
-                />
-                <div className="text-center">
-                  <h3 className="text-md font-semibold text-white">
-                    {user.name}
-                  </h3>
-                  <span className="text-gray-400 text-sm">{user.email}</span>
-                </div>
-              </div>
-            </MenuHeader>
-            <div className="flex flex-col gap-1 w-full">
-              <MenuItem href="#tasks">
-                <ListCheckIcon size={24} />
-                <span>Tarefas</span>
-              </MenuItem>
-              <MenuItem href="#charts">
-                <ChartColumnBigIcon size={24} />
-                <span>Gráficos</span>
-              </MenuItem>
-            </div>
-          </MenuContent>
-        </Menu>
+        <MainMenu />
         <div className="w-full px-5 h-[90vh] py-2 overflow-y-auto">
           <section id="tasks">
             <div className="w-full">

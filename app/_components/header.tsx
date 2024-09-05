@@ -30,6 +30,7 @@ import {
 } from "./basics/menu-modal";
 import Image from "next/image";
 import { useAuth } from "../_context/auth-context";
+import Link from "next/link";
 
 interface Task {
   id: number;
@@ -41,7 +42,7 @@ interface Task {
 }
 
 interface HeaderProps {
-  onAddTask: (task: Task) => void;
+  onAddTask?: (task: Task) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
@@ -71,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
       completed_at: null,
     };
 
-    onAddTask(newTask);
+    onAddTask && onAddTask(newTask);
     handleCloseModal();
   };
 
@@ -83,10 +84,12 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
         </ModalTrigger>
         <ContainerTitle>Gerenciamento de Tarefas</ContainerTitle>
       </div>
-      <Button $ghost style={{ color: "#fff" }} onClick={handleOpenModal}>
-        <PlusIcon size={16} />
-        Nova Tarefa
-      </Button>
+      {onAddTask && (
+        <Button $ghost style={{ color: "#fff" }} onClick={handleOpenModal}>
+          <PlusIcon size={16} />
+          Nova Tarefa
+        </Button>
+      )}
 
       {isMenuOpen && (
         <MenuModal>
@@ -113,17 +116,20 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
               </div>
             </div>
             <div className="flex flex-col gap-1 w-full">
-              <MenuModalItem href="#tasks" onClick={() => setIsMenuOpen(false)}>
+              <Link
+                href="/"
+                className="flex items-center gap-2 py-2 px-3 hover:opacity-80 text-white"
+              >
                 <ListCheckIcon size={24} />
                 <span>Tarefas</span>
-              </MenuModalItem>
-              <MenuModalItem
-                href="#charts"
-                onClick={() => setIsMenuOpen(false)}
+              </Link>
+              <Link
+                href="/charts"
+                className="flex items-center gap-2 py-2 px-3 hover:opacity-80 text-white"
               >
                 <ChartColumnBigIcon size={24} />
                 <span>Gráficos</span>
-              </MenuModalItem>
+              </Link>
             </div>
           </MenuModalContent>
         </MenuModal>
