@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
         <ContainerTitle>Gerenciamento de Tarefas</ContainerTitle>
       </div>
       {onAddTask && (
-        <Button ghost onClick={handleOpenModal}>
+        <Button ghost style={{ color: "#fff" }} onClick={handleOpenModal}>
           <PlusIcon size={16} />
           Nova Tarefa
         </Button>
