@@ -1,6 +1,6 @@
 import { FilterIcon, ListOrderedIcon, SearchIcon } from "lucide-react";
-import { Input } from "./basics/input";
-import { Select, Option } from "./basics/select";
+import { Input } from "./basics/input/input";
+import { Select, Option } from "./basics/select/select";
 
 interface FilterProps {
   setFilter: (value: string) => void;

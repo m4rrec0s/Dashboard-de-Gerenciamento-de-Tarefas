@@ -8,7 +8,7 @@ import {
   TrashIcon,
   XIcon,
 } from "lucide-react";
-import { Badge } from "./basics/badge";
+import Badge from "./basics/badge/badge";
 import {
   Card,
   CardDescription,
@@ -16,8 +16,8 @@ import {
   CardTitle,
   CardContent,
   CardFooter,
-} from "./basics/card";
-import { Button } from "./basics/button";
+} from "./basics/card/card";
+import { Button } from "./basics/button/button";
 import {
   ModalOverlay,
   ModalContainer,
@@ -25,8 +25,8 @@ import {
   ModalTitle,
   ModalBody,
   ModalFooter,
-} from "./basics/modal";
-import { Input } from "./basics/input";
+} from "./basics/modal/modal";
+import { Input } from "./basics/input/input";
 
 interface TaskItemProps {
   props: {
@@ -39,7 +39,7 @@ interface TaskItemProps {
   };
   onEdit: (
     id: number,
-    updatedTask: { title: string; description: string; }
+    updatedTask: { title: string; description: string }
   ) => void;
   onDelete: (id: number) => void;
 }
@@ -102,31 +102,27 @@ const TaskItem = ({ props, onEdit, onDelete }: TaskItemProps) => {
         <CardFooter className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             {status === "Pendente" && (
-              <Button $outline onClick={handleStart}>
+              <Button outline onClick={handleStart}>
                 <PlayIcon className="w-4 h-4" />
                 Iniciar
               </Button>
             )}
             {status === "Em progresso" && (
-              <Button $outline onClick={handleComplete}>
+              <Button outline onClick={handleComplete}>
                 <CheckIcon className="w-4 h-4" />
                 Completar
               </Button>
             )}
-            {status === "Concluída" && (
-              <Badge className="px-2 py-1 rounded-full text-xs">
-                Concluída
-              </Badge>
-            )}
+            {status === "Concluída" && <Badge>Concluída</Badge>}
           </div>
           <div className="flex items-center gap-2">
             {status !== "Concluída" && (
-              <Button $outline onClick={handleEditClick}>
+              <Button outline onClick={handleEditClick}>
                 <FilePenIcon className="w-4 h-4" />
                 Editar
               </Button>
             )}
-            <Button $outline onClick={handleDelete}>
+            <Button outline onClick={handleDelete}>
               <TrashIcon className="w-4 h-4" />
               Deletar
             </Button>
@@ -139,7 +135,7 @@ const TaskItem = ({ props, onEdit, onDelete }: TaskItemProps) => {
           <ModalContainer>
             <ModalHeader>
               <ModalTitle>Editar Tarefa</ModalTitle>
-              <Button $ghost onClick={handleModalClose}>
+              <Button ghost onClick={handleModalClose}>
                 <XIcon className="w-5 h-5" />
               </Button>
             </ModalHeader>
@@ -166,7 +162,7 @@ const TaskItem = ({ props, onEdit, onDelete }: TaskItemProps) => {
               </div>
             </ModalBody>
             <ModalFooter>
-              <Button $outline className="cancel" onClick={handleModalClose}>
+              <Button outline onClick={handleModalClose}>
                 Cancelar
               </Button>
               <Button onClick={handleSave}>Salvar</Button>

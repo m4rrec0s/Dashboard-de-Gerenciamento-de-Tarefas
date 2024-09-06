@@ -8,8 +8,8 @@ import {
   PlusIcon,
   XIcon,
 } from "lucide-react";
-import { Button } from "./basics/button";
-import { Container, ContainerTitle } from "./basics/container";
+import { Button } from "./basics/button/button";
+import { Container, ContainerTitle } from "./basics/container/container";
 import {
   ModalOverlay,
   ModalContainer,
@@ -17,17 +17,15 @@ import {
   ModalTitle,
   ModalBody,
   ModalFooter,
-} from "./basics/modal";
-import { Input } from "./basics/input";
+} from "./basics/modal/modal";
+import { Input } from "./basics/input/input";
 import {
   ModalTrigger,
   MenuModal,
   MenuModalContent,
   MenuModalHeader,
-  MenuModalItem,
-  MenuModalTitle,
   MenuModalClose,
-} from "./basics/menu-modal";
+} from "./basics/menu-modal/menu-modal";
 import Image from "next/image";
 import { useAuth } from "../_context/auth-context";
 import Link from "next/link";
@@ -85,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
         <ContainerTitle>Gerenciamento de Tarefas</ContainerTitle>
       </div>
       {onAddTask && (
-        <Button $ghost style={{ color: "#fff" }} onClick={handleOpenModal}>
+        <Button ghost onClick={handleOpenModal}>
           <PlusIcon size={16} />
           Nova Tarefa
         </Button>
@@ -140,7 +138,7 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
           <ModalContainer>
             <ModalHeader>
               <ModalTitle>Nova Tarefa</ModalTitle>
-              <Button $ghost onClick={handleCloseModal}>
+              <Button ghost onClick={handleCloseModal}>
                 <XIcon className="w-5 h-5" />
               </Button>
             </ModalHeader>
@@ -159,7 +157,7 @@ const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
               />
             </ModalBody>
             <ModalFooter>
-              <Button $outline className="cancel" onClick={handleCloseModal}>
+              <Button outline onClick={handleCloseModal}>
                 Cancelar
               </Button>
               <Button onClick={handleSaveTask}>Criar</Button>

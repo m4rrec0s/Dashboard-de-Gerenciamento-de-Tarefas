@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const CustomContainer = styled.div`
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 `
 
-export const ContainerTitle = styled.h1`
+export const CustomContainerTitle = styled.h1`
     font-size: var(--size-xl);
     font-weight: bold;
     color: #fff;

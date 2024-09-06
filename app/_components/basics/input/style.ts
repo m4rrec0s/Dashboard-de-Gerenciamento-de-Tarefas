@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const Input = styled.input`
+export const CustomInput = styled.input`
   background-color: var(--card);
   border-radius: 10px;
   padding: 10px 20px;

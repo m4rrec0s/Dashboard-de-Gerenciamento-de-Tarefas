@@ -1,7 +1,7 @@
 "use client";
 
 import { MoonIcon, SunIcon } from "lucide-react";
-import ThemeToggleContainer from "../_components/basics/theme-container";
+import ThemeToggleContainer from "../_components/basics/theme-container/theme-container";
 import Header from "../_components/header";
 import MainMenu from "../_components/main-menu";
 import { useTheme } from "next-themes";
@@ -12,7 +12,7 @@ import data from "../data/tasks.json";
 import {
   ChartsContainer,
   ChartSection,
-} from "../_components/basics/charts-style";
+} from "../_components/basics/charts/charts-style";
 import { useEffect } from "react";
 import { useAuth } from "../_context/auth-context";
 import { useRouter } from "next/navigation";

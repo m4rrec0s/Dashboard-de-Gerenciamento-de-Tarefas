@@ -1,5 +1,5 @@
 import { ListCheckIcon, ChartColumnBigIcon } from "lucide-react";
-import { Menu, MenuContent, MenuHeader, MenuItem } from "./basics/menu";
+import { Menu, MenuContent, MenuHeader } from "./basics/menu/menu";
 import Image from "next/image";
 import { useAuth } from "../_context/auth-context";
 import Link from "next/link";

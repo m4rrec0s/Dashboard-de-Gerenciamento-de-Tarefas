@@ -32,7 +32,7 @@ const modalInAnimate = keyframes`
   }
 `;
 
-export const MenuModal = styled.section`
+export const CustomMenuModal = styled.section`
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -44,7 +44,7 @@ export const MenuModal = styled.section`
   justify-content: flex-start;
 `;
 
-export const MenuModalContent = styled.div`
+export const CustomMenuModalContent = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ export const MenuModalContent = styled.div`
   animation: ${modalInAnimate} 0.2s ease-in;
 `;
 
-export const MenuModalClose = styled.button`
+export const CustomMenuModalClose = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -74,17 +74,17 @@ export const MenuModalClose = styled.button`
   }
 `;
 
-export const MenuModalHeader = styled.div`
+export const CustomMenuModalHeader = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-export const MenuModalTitle = styled.h2`
+export const CustomMenuModalTitle = styled.h2`
   color: #fff;
   font-size: 1.5rem;
 `;
 
-export const MenuModalItem = styled.a`
+export const CustomMenuModalItem = styled.a`
   display: flex;
   gap: 10px;
   align-items: center;
@@ -99,7 +99,7 @@ export const MenuModalItem = styled.a`
   }
 `;
 
-export const ModalTrigger = styled.button`
+export const CustomModalTrigger = styled.button`
   background-color: transparent;
   color: #fff;
   padding: 10px;

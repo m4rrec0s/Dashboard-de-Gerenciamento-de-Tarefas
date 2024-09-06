@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const Button = styled.button<{ $outline?: boolean; $ghost?: boolean }>`
+export const ButtonContainer = styled.button<{ $outline?: boolean; $ghost?: boolean }>`
   padding: 10px 20px;
   font-size: var(--size-xs);
   font-weight: 700;

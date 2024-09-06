@@ -10,7 +10,7 @@ import {
   SunIcon,
 } from "lucide-react";
 import { useTheme } from "next-themes";
-import ThemeToggleContainer from "./_components/basics/theme-container";
+import ThemeToggleContainer from "./_components/basics/theme-container/theme-container";
 import { useAuth } from "./_context/auth-context";
 import { useRouter } from "next/navigation";
 import MainMenu from "./_components/main-menu";

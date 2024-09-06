@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export const Menu = styled.section`
+export const CustomMenu = styled.section`
   display: flex;
   height: calc(100vh - 80px);
   flex-direction: column;
@@ -17,19 +17,19 @@ export const Menu = styled.section`
   }
 `;
 
-export const MenuHeader = styled.div`
+export const CustomMenuHeader = styled.div`
   display: flex;
   gap: 10px;
   justify-content: center;
 `;
 
-export const MenuContent = styled.div`
+export const CustomMenuContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
 `;
 
-export const MenuItem = styled.a`
+export const CustomMenuItem = styled.a`
   display: flex;
   gap: 10px;
   align-items: center;

@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useAuth } from "../_context/auth-context";
-import { Input } from "../_components/basics/input";
-import { Button } from "../_components/basics/button";
-import { Form, FormFooter, FormTitle } from "../_components/basics/form";
+import  {Input}  from "../_components/basics/input/input";
+import { Button } from "../_components/basics/button/button";
+import { Form, FormFooter, FormTitle } from "../_components/basics/form/form";
 
 export default function LoginPage() {
   const { login } = useAuth();
