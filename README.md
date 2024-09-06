@@ -1,79 +1,95 @@
-# Desafio Técnico: Dashboard de Gerenciamento de Tarefas
+# Gerenciamento de Tarefas
 
-## Objetivo do Projeto
+Este é um projeto completo de gerenciamento de tarefas, que permite aos usuários adicionar, editar, excluir e visualizar tarefas de forma organizada. Além disso, o projeto inclui gráficos dinâmicos que exibem o progresso das tarefas ao longo do tempo, além de um sistema de alternância de temas e autenticação de usuário.
 
-O objetivo deste projeto é avaliar suas habilidades em desenvolvimento frontend utilizando Next.js, TypeScript, RTK Query, e Styled Components. Você deverá criar um dashboard de gerenciamento de tarefas que permita visualizar, criar, atualizar e deletar tarefas, além de exibir gráficos de produtividade.
+## Funcionalidades
 
-## Requisitos do Projeto
+- **Gerenciamento de Tarefas:** Adicione, edite e exclua tarefas facilmente.
+- **Filtragem e Pesquisa:** Filtre e pesquise suas tarefas de forma eficiente.
+- **Visualização com Gráficos:** Visualize o progresso de suas tarefas em gráficos de linha, barra e rosca.
+- **Temas Claro/Escuro:** Alterne entre temas claro e escuro para melhorar a experiência de visualização.
+- **Autenticação de Usuário:** Autenticação simples onde o usuário insere um nome e email para acessar a aplicação.
 
-### Funcionalidades Básicas
+## Tecnologias Utilizadas
 
-1. **Dashboard de Tarefas**:
+- **Next.js:** Framework React para renderização no lado do servidor e otimização de desempenho.
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript:** Suporte a tipagem estática para maior confiabilidade e manutenibilidade do código.
+- **Chart.js:** Biblioteca de gráficos para exibir dados dinâmicos.
+- **Styled Components:** Solução para aplicar estilos com escopo baseado em componentes.
+- **Lucide-react:** Ícones minimalistas usados na interface.
+- **next-themes:** Gerenciamento de temas para alternância entre os modos claro e escuro.
 
-   - Crie uma interface que mostre uma lista de tarefas com as seguintes informações:
-     - Título da tarefa
-     - Descrição
-     - Status (Pendente, Em progresso, Concluída)
-     - Data de criação
-     - Data de conclusão (se aplicável)
-   - Permita que o usuário adicione, edite e delete tarefas.
+## Pré-requisitos
 
-2. **Filtro e Ordenação**:
+- **Node.js:** Versão 14 ou superior.
+- **npm** ou **yarn:** Gerenciadores de pacotes.
 
-   - Implemente filtros por status das tarefas.
-   - Permita ordenar as tarefas por data de criação ou data de conclusão.
+## Instalação
 
-3. **Gráfico de Produtividade**:
+1. Clone o repositório:
 
-   - Exiba um gráfico que mostre o número de tarefas concluídas por dia, semana ou mês.
-   - Utilize uma biblioteca como `recharts` ou `chart.js` para criar os gráficos.
+   ```bash
+   git clone https://github.com/m4rrec0s/Dashboard-de-Gerenciamento-de-Tarefas.git
+   ```
 
-4. **Design Responsivo**:
-   - A interface deve ser responsiva e funcionar bem em dispositivos móveis e desktops.
-   - Utilize **Styled Components** para a estilização da aplicação.
+2. Navegue até o diretório do projeto:
 
-### Requisitos Técnicos
+   ```bash
+   cd Dashboard-de-Gerenciamento-de-Tarefas
+   ```
 
-1. **Next.js e TypeScript**:
+3. Instale as dependências necessárias:
 
-   - A aplicação deve ser desenvolvida utilizando **Next.js** e **TypeScript**.
-   - Siga as boas práticas de tipagem no TypeScript.
+   ```bash
+   npm install
+   ```
 
-2. **Styled Components**:
+   ou
 
-   - Utilize **Styled Components** para criar componentes estilizados e temáticos.
-   - Crie um tema global para a aplicação, com suporte a dark mode (opcional).
+   ```bash
+   yarn install
+   ```
 
-3. **Testes Automatizados** (opcional):
+## Executando o Projeto
 
-   - Implemente testes unitários e de integração utilizando **Jest** e **Testing Library**.
-   - Teste os componentes principais, as chamadas de API e a lógica de estado.
+1. Inicie o servidor de desenvolvimento:
 
-4. **Documentação**:
-   - Documente o processo de instalação, configuração e uso da aplicação no README.md.
+   ```bash
+   npm run dev
+   ```
 
-### Requisitos Opcionais (Diferenciais)
+   ou
 
-1. **Autenticação/Autorização**:
-   - Proteja as rotas sensíveis e exiba o nome do usuário logado no dashboard.
+   ```bash
+   yarn dev
+   ```
 
-## Critérios de Avaliação
+2. Abra o navegador e acesse `http://localhost:3000`.
 
-1. **Clareza e Organização do Código**:
+## Estrutura do Projeto
 
-   - O código deve ser limpo, modular e seguir as boas práticas de desenvolvimento.
+- **`_components/`:** Contém os componentes reutilizáveis como gráficos, menus, modais e outros elementos da interface.
+- **`_context/`:** Implementação do contexto de autenticação e gerenciamento de estado global.
+- **`_lib/`:** Contém a configuração e funções auxiliares do projeto, como integração com Styled Components.
+- **`data/`:** Armazena dados mockados usados nas páginas de tarefas e gráficos.
+- **`styles/`:** Arquivos de estilos globais e variáveis de temas.
+- **`pages/`:** Páginas principais da aplicação, gerenciadas pelo Next.js.
 
-2. **Conhecimento em Next.js e TypeScript**:
+## Autenticação
 
-   - A tipagem correta e abrangente no TypeScript será considerada.
+O sistema de autenticação é baseado no contexto de autenticação localizado no arquivo [`_context/auth-context.tsx`]. O usuário precisa inserir um nome e um email para acessar o aplicativo. Esta autenticação é simples e simula um fluxo de login para propósitos de desenvolvimento.
 
-3. **Design e Usabilidade**:
+## Temas
 
-   - A interface deve ser intuitiva, atraente e funcional, com uma boa experiência de usuário em diferentes dispositivos.
+O projeto suporta alternância de temas entre claro e escuro, utilizando `next-themes` e `Styled Components` para gerenciar estilos dinâmicos. Os usuários podem alterar o tema clicando no ícone de sol/lua, localizado no cabeçalho da aplicação.
 
-4. **Testes** (Opcional):
+## Gráficos
 
-   - A qualidade e cobertura dos testes automatizados serão analisadas.
+Os gráficos são renderizados com a biblioteca `react-chartjs-2` e `Chart.js`, permitindo uma visualização intuitiva do progresso das tarefas ao longo do tempo:
 
-5. **Documentação**:
-   - A documentação deve ser clara e permitir que outro desenvolvedor configure e execute o projeto sem dificuldades.
+- **Gráfico de Linha:** Exibe tarefas completadas por dia ([`LineChart.tsx`]).
+- **Gráfico de Barra:** Mostra tarefas completadas por semana ([`BarChart.tsx`]).
+- **Gráfico de Rosca:** Exibe o total de tarefas completadas por mês ([`DoughnutChart.tsx`]).
+
+Esses gráficos estão na página de estatísticas, acessível a partir do menu principal.
