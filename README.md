@@ -2,6 +2,8 @@
 
 Este é um projeto completo de gerenciamento de tarefas, que permite aos usuários adicionar, editar, excluir e visualizar tarefas de forma organizada. Além disso, o projeto inclui gráficos dinâmicos que exibem o progresso das tarefas ao longo do tempo, além de um sistema de alternância de temas e autenticação de usuário.
 
+![Apresentação do Projeto](./public/movie/presents.gif)
+
 ## Funcionalidades
 
 - **Gerenciamento de Tarefas:** Adicione, edite e exclua tarefas facilmente.
